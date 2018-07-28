@@ -56,7 +56,6 @@ document.onkeyup = function (event) {
             if (res[i] !== displayBlankSpace[i] && totalGuess === 0) {
 
                 loss++;
-                totalGuess = 0;
                 losses.textContent = loss;
                 init();
 
@@ -66,7 +65,6 @@ document.onkeyup = function (event) {
             if (res[res.length - 1] === displayBlankSpace[displayBlankSpace.length - 1]) {
                 win++;
                 wins.textContent = win;
-                totalGuess = 0;
                 losses.textContent = loss;
                 init();
                 break;
