@@ -1,0 +1,25 @@
+body {
+    background-image: url("../images/wordGuess.png");
+    background-color: #cccccc;
+ }
+
+ #headerStyle{
+     background: black;
+     font-family: cursive;
+     color: green;
+     text-align: center;
+     height: 120px;
+     font-size: 30px;
+ }
+
+ h1{
+     padding: 30px;
+ }
+ 
+ h2{
+    font-family: cursive;
+ }
+
+ .container{
+     background: black;
+ }
