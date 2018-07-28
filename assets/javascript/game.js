@@ -95,5 +95,6 @@ function init() {
 
     displayBlankSpaceEl.textContent = displayBlankSpace.join(' ');
     displayGuessEl.textContent = '';
+    guessEl.textContent = 10;
 }
 
