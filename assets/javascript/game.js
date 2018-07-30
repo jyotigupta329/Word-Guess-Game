@@ -45,12 +45,14 @@ document.onkeyup = function (event) {
         guessEl.textContent = totalGuess;
         //Display the user guess
         displayUserGuess.push(userGuess);
+        console.log("userGuess so far: ", displayUserGuess);
         displayGuessEl.textContent = displayUserGuess.join(', ');
         //If user choice letter matches the computer choice it replace the blank space with the letter
         for (var i = 0; i < res.length; i++) {
             if (userGuess === res[i]) {
                 displayBlankSpace[i] = res[i];
                 correctChoicePositions.push(i);
+                console.log("Choice positions: " , correctChoicePositions);
                 displayBlankSpaceEl.textContent = displayBlankSpace.join(' ');
             }
 
@@ -91,12 +93,13 @@ function init() {
     totalGuess = 10;
     displayUserGuess = [];
     displayBlankSpace = [];
+    correctChoicePositions = [];
     computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
     // Convert string to an array and Display the blank spaces
 
     res = computerGuess.split("");
-    console.log(res);
+    console.log("target word:" , res);
     for (var i = 0; i < res.length; i++) {
         displayBlankSpace.push("_");
     }
